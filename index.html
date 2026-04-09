@@ -303,7 +303,7 @@
 
           <!-- PROJECT 04 -->
           <div class="project-card reveal reveal-delay-2">
-            <div class="project-visual" style="min-height:140px;">
+            <div class="project-visual">
               <div class="project-visual-inner">
                 <div style="display:flex; gap:0.5rem; flex-wrap:wrap; padding: 1.2rem;">
                   <div class="arch-box gold" style="font-size:0.65rem;">React</div>
@@ -351,9 +351,6 @@
               <div class="code-line"><span class="code-num">05</span>&nbsp;&nbsp;&nbsp;&nbsp;HttpHeaders headers = <span class="code-kw">new</span> <span class="code-fn">HttpHeaders</span>();</div>
               <div class="code-line"><span class="code-num">06</span>&nbsp;&nbsp;&nbsp;&nbsp;headers.<span class="code-fn">set</span>("Authorization", "KakaoAK " + kakaoRestKey);</div>
               <div class="code-line"><span class="code-num">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">return</span> restTemplate.<span class="code-fn">exchange</span>(url, HttpMethod.GET, <span class="code-kw">new</span> <span class="code-fn">HttpEntity</span>&lt;&gt;(headers), Map.class)</div>
-              <div class="code-line"><span class="code-num">08</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.<span class="code-fn">getBody</span>().<span class="code-fn">get</span>("documents").<span class="code-fn">stream</span>().<span class="code-fn">map</span>(doc -> {</div>
-              <div class="code-line"><span class="code-num">09</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">int</span> review = (<span class="code-kw">int</span>) (<span class="code-kw">Long</span>.<span class="code-fn">parseLong</span>(doc.<span class="code-fn">get</span>("id").<span class="code-fn">toString</span>()) % 41) + 60;</div>
-              <div class="code-line"><span class="code-num">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">return</span> <span class="code-fn">builder</span>().<span class="code-fn">review</span>(review).<span class="code-fn">build</span>(); }); }</div>
             </div>
           </div>
           <div class="project-body">
